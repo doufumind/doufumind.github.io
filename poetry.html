@@ -1,10 +1,10 @@
-```html
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>诗歌 | 我的诗歌集</title>
+
+  <title>诗歌 | 个人诗歌集</title>
 
   <style>
     * {
@@ -15,12 +15,12 @@
       margin: 0;
       background: #faf9f6;
       color: #333;
-      font-family: "Songti SC", "Noto Serif SC", serif;
+      font-family: "Songti SC", "Noto Serif SC", "SimSun", serif;
     }
 
+    /* 顶部导航 */
     header {
       padding: 22px 8%;
-      background: #faf9f6;
     }
 
     header a {
@@ -29,41 +29,54 @@
       font-size: 15px;
     }
 
+    header a:hover {
+      color: #999;
+    }
+
+    /* 背景图片区域 */
     .hero {
-  height: 320px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background:
-    linear-gradient(rgba(20, 25, 20, 0.25),
-                    rgba(20, 25, 20, 0.25)),
-    url("./poetry-bg.jpg") center 50% / cover no-repeat;
-  color: white;
-  text-align: center;
-}
+      min-height: 360px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image:
+        linear-gradient(
+          rgba(20, 25, 20, 0.25),
+          rgba(20, 25, 20, 0.25)
+        ),
+        url("./poetry-bg.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: white;
+      text-align: center;
+    }
 
     .hero h1 {
-      font-size: 38px;
+      margin: 0 0 18px;
+      font-size: 40px;
       font-weight: normal;
       letter-spacing: 12px;
     }
 
     .hero p {
+      margin: 0;
       font-size: 14px;
-      letter-spacing: 3px;
+      letter-spacing: 4px;
     }
 
+    /* 诗歌目录 */
     main {
       max-width: 900px;
-      margin: 65px auto;
+      margin: 65px auto 90px;
       padding: 0 24px;
     }
 
     .section-title {
-      font-size: 14px;
+      margin-bottom: 28px;
       color: #888;
+      font-size: 13px;
       letter-spacing: 4px;
-      margin-bottom: 30px;
     }
 
     .poem-list {
@@ -79,40 +92,49 @@
       background: #fff;
       color: #333;
       text-decoration: none;
-      transition: background 0.2s;
+      transition: background 0.2s ease;
     }
 
     .poem-card:hover {
-      background: #f1efe9;
+      background: #f0eee8;
     }
 
     .poem-card h2 {
+      margin: 0 0 14px;
       font-size: 19px;
       font-weight: normal;
-      margin: 0 0 12px;
+      line-height: 1.7;
     }
 
     .poem-card p {
+      margin: 0;
       color: #999;
       font-size: 13px;
-      margin: 0;
+      line-height: 1.8;
     }
 
+    /* 页面底部 */
     footer {
-      padding: 30px;
-      text-align: center;
+      padding: 28px 20px;
+      border-top: 1px solid #eeeae3;
       color: #aaa;
+      text-align: center;
       font-size: 12px;
     }
 
+    /* 手机屏幕适配 */
     @media (max-width: 600px) {
       .hero {
-        height: 240px;
+        min-height: 260px;
       }
 
       .hero h1 {
-        font-size: 29px;
-        letter-spacing: 7px;
+        font-size: 30px;
+        letter-spacing: 8px;
+      }
+
+      main {
+        margin-top: 45px;
       }
 
       .poem-list {
@@ -123,6 +145,7 @@
 </head>
 
 <body>
+
   <header>
     <a href="index.html">← 返回首页</a>
   </header>
@@ -130,7 +153,7 @@
   <section class="hero">
     <div>
       <h1>诗歌</h1>
-      <p>豆腐脑写的</p>
+      <p>写给世界，也写给自己</p>
     </div>
   </section>
 
@@ -138,26 +161,6 @@
     <div class="section-title">POEMS / 诗作</div>
 
     <div class="poem-list">
+
       <a class="poem-card" href="poems/ginkgo.html">
-        <h2>银杏叶永不落空</h2>
-        <p>2026.10</p>
-      </a>
-
-      <a class="poem-card" href="poems/sunshine.html">
-        <h2>在阳光灿烂的日子里</h2>
-        <p>2026.9</p>
-      </a>
-
-      <a class="poem-card" href="poems/moon.html">
-        <h2>认识月亮</h2>
-        <p>2026.9</p>
-      </a>
-    </div>
-  </main>
-
-  <footer>
-    © 诗集
-  </footer>
-</body>
-</html>
-```
+        <h2>银杏叶永不落空</h2
