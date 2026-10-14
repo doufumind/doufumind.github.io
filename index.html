@@ -10,63 +10,151 @@
 
 <style>
 
+
 body{
 
-max-width:900px;
-margin:80px auto;
-padding:0 30px;
+margin:0;
 
-font-family:"Noto Serif SC","Songti SC",serif;
+font-family:
+"Noto Serif SC",
+"Songti SC",
+serif;
 
 color:#333;
 
-line-height:2;
-
 }
 
 
-header{
+
+/* 首页封面 */
+
+.hero{
+
+
+height:90vh;
+
+
+background-image:url("天鹅.jpg");
+
+
+background-size:cover;
+
+
+background-position:center;
+
+
+display:flex;
+
+
+align-items:center;
+
+
+justify-content:center;
+
 
 text-align:center;
 
-margin-bottom:80px;
+
+color:white;
+
 
 }
 
 
-h1{
+.hero h1{
 
-font-size:42px;
+
+font-size:50px;
+
 
 font-weight:normal;
 
-letter-spacing:10px;
+
+letter-spacing:12px;
+
+
+text-shadow:0 2px 10px #333;
+
 
 }
 
 
-nav{
 
-margin-top:30px;
+.hero p{
+
+
+font-size:22px;
+
+
+letter-spacing:5px;
+
 
 }
 
 
-nav a{
 
-margin:0 15px;
+/* 导航区域 */
 
-color:#666;
+
+.menu{
+
+
+display:flex;
+
+
+justify-content:center;
+
+
+gap:60px;
+
+
+padding:70px 20px;
+
+
+font-size:20px;
+
+
+}
+
+
+
+.menu a{
+
+
+color:#333;
+
 
 text-decoration:none;
 
+
 }
 
 
 
-section{
+.menu a:hover{
 
-margin-bottom:70px;
+
+color:#888;
+
+
+}
+
+
+
+/* 最新作品 */
+
+
+.content{
+
+
+max-width:800px;
+
+
+margin:auto;
+
+
+padding:50px 30px;
+
 
 }
 
@@ -74,42 +162,38 @@ margin-bottom:70px;
 
 h2{
 
+
 font-weight:normal;
 
-font-size:24px;
+
+font-size:30px;
+
 
 border-bottom:1px solid #ddd;
 
-padding-bottom:10px;
+
+padding-bottom:20px;
+
 
 }
 
 
 
-.card{
+.poem{
 
-margin:35px 0;
 
-padding-bottom:25px;
+margin:40px 0;
 
-border-bottom:1px solid #eee;
 
 }
 
 
 
-.title{
-
-font-size:25px;
-
-}
+.poem-title{
 
 
-.date{
+font-size:24px;
 
-color:#999;
-
-font-size:14px;
 
 }
 
@@ -117,16 +201,22 @@ font-size:14px;
 
 footer{
 
+
 text-align:center;
+
 
 color:#999;
 
-margin-top:100px;
+
+padding:60px;
+
 
 }
 
 
+
 </style>
+
 
 </head>
 
@@ -135,116 +225,108 @@ margin-top:100px;
 <body>
 
 
-<header>
 
-<h1>豆腐脑的诗歌</h1>
+<!-- 第一屏 -->
+
+<div class="hero">
+
+
+<div>
+
+
+<h1>
+豆腐脑的诗歌
+</h1>
+
 
 <p>
 水里的火。
 </p>
 
 
-<nav>
+</div>
+
+
+</div>
+
+
+
+<!-- 分类 -->
+
+
+<div class="menu">
+
 
 <a href="#">诗歌</a>
 
+
 <a href="#">散文</a>
+
 
 <a href="#">阅读</a>
 
+
 <a href="#">关于</a>
 
-</nav>
 
-
-</header>
-
-
-
-<section>
-
-
-<h2>最新作品</h2>
+</div>
 
 
 
-<div class="card">
 
-<div class="title">
+<!-- 最新作品 -->
+
+
+<div class="content">
+
+
+<h2>
+最新作品
+</h2>
+
+
+
+<div class="poem">
+
+<div class="poem-title">
+
 银杏叶永不落空
-</div>
 
-<div class="date">
-2026 · 秋
 </div>
 
 <p>
-你欣喜地抚摸这些蓝色的树冠<br>
-它们曾经老去，如今<br>
-又从梦里走出。
+
+关于晚秋、记忆，以及重新来到生命中的事物。
+
 </p>
+
 
 </div>
 
 
 
+<div class="poem">
 
-<div class="card">
+<div class="poem-title">
 
-<div class="title">
 在阳光灿烂的日子里
-</div>
-
-<div class="date">
-2026 · 秋
-</div>
-
-<p>
-关于人与人之间的理解，
-以及那些尚未消失的事物。
-</p>
 
 </div>
-
-
-
-
-<div class="card">
-
-<div class="title">
-认识月亮
-</div>
-
-<div class="date">
-2026 · 秋
-</div>
-
-<p>
-关于时间、孤独与温柔。
-</p>
-
-</div>
-
-
-</section>
-
-
-
-
-<section>
-
-<h2>关于</h2>
 
 
 <p>
 
-这里保存一些关于世界、爱情、记忆和人的文字。
+关于人与人之间的理解。
 
 </p>
 
 
-</section>
+</div>
 
+
+
+
+</div>
 
 
 
